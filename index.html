@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');</style>
+</head>
+
+<body>
+    <div class="logo">
+        <span class="tint"></span>
+        <span class = "csula-logo">
+            <img src="./images/c.png" alt="csula logo">
+        </span>
+        <p class="credit">Photo by <a href="https://unsplash.com/@priscilladupreez?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Priscilla Du Preez 🇨🇦</a> on <a href="https://unsplash.com/photos/woman-wearing-yellow-t-shirt-laughing-h58gEQi1Yss?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+    </div>
+
+    <div class="info">
+        <div class = "desc">Sign up to <span>MyEaglePortal</span></div>
+        <div class="form-div">
+            <div class="caption" style = "font-size:1.5em">Account Information</div>
+                <form method = "POST">
+                    <div class="form-row">  
+                        <div class="form-element">
+                            <label for="first-name">First Name *</label>
+                            <input type="text" name="first-name" id="first-name" required>
+                        </div>
+                        <div class="form-element">
+                            <label for="last-name">Last Name *</label>
+                            <input type="text" name="last-name" id="last-name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-element">
+                            <label for="email">Email *</label>
+                            <input placeholder = "E.g something@domain.com" type="text" name="email" id="email" pattern = ".*@.*\..{1,}" required>
+                        </div>
+                        <div class="form-element">
+                            <label for="phone">Phone Number *</label>
+                            <input placeholder = "E.g ###-###-####" type="text" name="phone" id="phone" pattern = "[1-9]{3}-[1-9]{3}-[1-9]{4}$" required>
+                        </div>
+                    </div>
+                        
+                    <div class="form-row">
+                        <div class="form-element">
+                            <label for="password">Password *</label>
+                            <input type="password" name="password" id="password" minlength = "8" required>
+                        </div>
+                        <div class="form-element">
+                            <label for="confirm-password">Confirm Password *</label>
+                            <input type="password" name="confirm-password" id="confirm-password" minlength = "8" required>
+                        </div>
+                    </div>
+                    <button type = "submit">Submit</button>
+                </form>
+            </div>
+        <span class = login>Already have an account? <a href="#">Log in</a></span>
+    </div>
+</body>
+</html>
